@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kolonilanding1.github.io/koloni-data-site/sitemap.xml
