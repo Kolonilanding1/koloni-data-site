@@ -3,57 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Koloni4D - Analisis Angka & Data</title>
+  <title>Koloni4D - Statistik & Analisa Angka</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      text-align: center;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d1b2a;
+      color: #e0e1dd;
+      min-height: 100vh;
     }
     header {
-      background-color: #1d3557;
-      color: #fff;
-      padding: 20px 0;
+      background-color: #1b263b;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-    h1 {
-      margin: 0;
+    header h1 {
+      font-size: 1.5rem;
+      color: #ffffff;
     }
     nav a {
-      color: #fff;
-      margin: 0 10px;
+      color: #e0e1dd;
+      margin: 0 12px;
       text-decoration: none;
+      font-weight: 500;
     }
-    main {
-      padding: 40px 20px;
+    nav a:hover {
+      color: #00b4d8;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(to bottom right, #1b263b, #0d1b2a);
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin-bottom: 30px;
+      line-height: 1.6;
     }
     .cta-button {
-      display: inline-block;
-      background-color: #457b9d;
-      color: white;
+      background-color: #00b4d8;
+      color: #fff;
       padding: 15px 30px;
-      font-size: 16px;
+      font-size: 1rem;
       border: none;
-      border-radius: 5px;
-      margin-top: 20px;
+      border-radius: 30px;
       text-decoration: none;
-      transition: background 0.3s;
+      transition: 0.3s ease;
     }
     .cta-button:hover {
-      background-color: #1d3557;
+      background-color: #0077b6;
     }
     footer {
-      background-color: #333;
-      color: white;
-      padding: 15px;
-      margin-top: 40px;
+      background-color: #1b263b;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
     }
     footer a {
-      color: #f1faee;
+      color: #e0e1dd;
       margin: 0 10px;
       text-decoration: none;
+    }
+    footer a:hover {
+      color: #00b4d8;
     }
   </style>
 </head>
@@ -69,17 +97,19 @@
     </nav>
   </header>
 
-  <main>
-    <h2>Analisis Angka Berdasarkan Data</h2>
-    <p>Selamat datang di Koloni4D. Kami menyediakan informasi angka berbasis statistik dan tren, bukan untuk judi atau taruhan.</p>
-    <a href="about.html" class="cta-button">Pelajari Lebih Lanjut</a>
-  </main>
+  <section class="hero">
+    <h2>Data Bukan Ramalan, Tapi Petunjuk</h2>
+    <p>Koloni4D menyajikan informasi dan analisis angka berbasis data statistik dan logika. Tidak ada unsur perjudian atau taruhan dalam bentuk apapun.</p>
+    <a href="about.html" class="cta-button">Jelajahi Sekarang</a>
+  </section>
 
   <footer>
     <p>&copy; 2025 Koloni4D. Semua hak dilindungi.</p>
-    <a href="privacy.html">Privasi</a> |
-    <a href="disclaimer.html">Disclaimer</a> |
-    <a href="contact.html">Kontak</a>
+    <div>
+      <a href="privacy.html">Privasi</a> |
+      <a href="disclaimer.html">Disclaimer</a> |
+      <a href="contact.html">Kontak</a>
+    </div>
   </footer>
 
 </body>
